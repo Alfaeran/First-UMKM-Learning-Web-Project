@@ -1,0 +1,278 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Mamat GunShop</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar-container">
+            <div class="logo">
+                <a href="index.html">Mamat GunShop</a>
+            </div>
+            <ul class="ul-navbar" id="menuLinks">
+                <li class="li-navbar">
+                    <a href="index.html" class="a-navbar">Beranda</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="Product_page.html" class="a-navbar">Produk</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="about.html" class="a-navbar">Tentang Kami</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="contact.html" class="a-navbar active">Kontak</a>
+                </li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Page Header -->
+        <header class="page-header">
+            <h1>Hubungi Kami</h1>
+            <p>Kami siap membantu Anda dengan segala pertanyaan dan kebutuhan senjata Anda</p>
+        </header>
+        <!-- Page Header End -->
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Informasi Kontak</h2>
+                    <div class="info-item">
+                        <div class="info-content">
+                            <h3>Alamat</h3>
+                            <p>Jl. IM BORN IN THE HOOD No. 45<br>Surabaya, 55281<br>Indonesia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-content">
+                            <h3>Telepon</h3>
+                            <p>085179561379 (Putri)</p>
+                            <p>085179561379 (WhatsApp)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>kaksdigital@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-content">
+                            <h3>Jam Operasional</h3>
+                            <p>Kami Tidak Pernah Tutup dan Tidak Akan Pernah</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Ikuti Kami</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-icon">IG</a>
+                            <a href="#" class="social-icon">WA</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Kirim Pesan</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telepon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <select id="subject" name="subject">
+                                <option value="general">Pertanyaan Umum</option>
+                                <option value="order">Pesanan</option>
+                                <option value="wholesale">Kerja Sama Grosir</option>
+                                <option value="support">Dukungan Pelanggan</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section End -->
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <h2 class="section-title">Lokasi Kami</h2>
+            <div class="map-container">
+                <!-- Placeholder for map iframe -->
+                <div class="map-placeholder">
+                    <p>Peta akan ditampilkan di sini</p>
+                    <p>Jl. IM BORN IN THE HOOD No. 45, Surabaya, 55281, Indonesia</p>
+                </div>
+            </div>
+        </section>
+        <!-- Map Section End -->
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2 class="section-title">Pertanyaan Umum</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3> Apa yang membedakan Mamat GunShop dari toko senjata lainnya?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Mamat GunShop tidak hanya menjual senjata, tetapi juga menawarkan pengalaman berbelanja yang unik dengan kombinasi antara kualitas produk dan sentuhan budaya. Kami menyediakan senjata berkualitas tinggi yang telah melalui pemeriksaan ketat dan dilengkapi dengan layanan pelanggan yang ramah dan edukatif. Selain itu, kami juga menawarkan produk dengan desain yang mencerminkan filosofi ketajaman dan ketelitian, seperti motif parang pada beberapa produk kami.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah saya perlu izin untuk membeli senjata di Mamat GunShop?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, untuk membeli senjata api di Mamat GunShop, Anda harus memiliki izin yang sah sesuai dengan peraturan yang berlaku di negara atau wilayah Anda. Kami selalu mematuhi semua regulasi dan hukum terkait kepemilikan senjata api, dan kami akan memastikan setiap transaksi dilakukan secara legal dan aman. Kami juga memberikan panduan kepada pelanggan mengenai prosedur dan dokumen yang diperlukan untuk mendapatkan izin.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana cara merawat senjata yang saya beli di Mamat GunShop?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kami sangat menganjurkan perawatan rutin pada senjata untuk memastikan performa maksimal dan umur panjang. Proses perawatan meliputi pembersihan setelah penggunaan, pelumasan rutin pada bagian yang bergerak, dan pemeriksaan berkala pada suku cadang. Anda dapat mengikuti panduan perawatan yang kami berikan bersama setiap pembelian atau mendapatkan konsultasi langsung dari staf kami.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah Mamat GunShop menyediakan layanan pelatihan menembak?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, kami menawarkan pelatihan menembak yang dipimpin oleh instruktur bersertifikat. Pelatihan ini tersedia untuk pemula hingga tingkat lanjut, dan dirancang untuk membantu Anda menguasai teknik menembak yang aman dan efektif. Kami memastikan bahwa setiap peserta memahami prinsip-prinsip keselamatan senjata sebelum memulai latihan.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah Mamat GunShop menerima pemesanan online dan pengiriman ke luar kota?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, Mamat GunShop menyediakan layanan pemesanan online melalui website kami. Anda dapat memilih produk yang diinginkan, melakukan pembayaran, dan kami akan mengatur pengiriman sesuai dengan alamat yang Anda berikan. Kami juga melayani pengiriman ke luar kota, dengan memastikan bahwa setiap transaksi dilakukan sesuai dengan hukum yang berlaku dan prosedur pengiriman yang aman. Untuk pengiriman luar kota, pastikan Anda mengikuti prosedur hukum terkait izin senjata di wilayah Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Section End -->
+
+        <!-- Footer -->
+        <footer class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mamat GunShop</h3>
+                    <p>Menjual Senjata Premium berkualitas.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Halaman</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="Product_page.html">Produk</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p>Jl. IM BORN IN THE HOOD No. 45<br>Yogyakarta, Indonesia</p>
+                    <p>Telp: 085179561379 (Putri)<br>Email: kaksdigital@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Media Sosial</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">WA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mamat GunShop. Hak Cipta Dilindungi.</p>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Toggle current item
+                    item.classList.toggle('active');
+                    
+                    // Update toggle icon
+                    const toggle = question.querySelector('.faq-toggle');
+                    toggle.textContent = item.classList.contains('active') ? '-' : '+';
+                });
+            });
+            
+            // Form submission
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form values
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+                    
+                    // Form validation would go here
+                    
+                    // Show success message (in a real application, you would send this to a server)
+                    alert(`Terima kasih, ${name}! Pesan Anda telah kami terima. Kami akan segera menghubungi Anda.`);
+                    
+                    // Reset form
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

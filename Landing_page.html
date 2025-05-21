@@ -1,0 +1,176 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batik Nusantara - Warisan Budaya Indonesia</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar-container">
+            <div class="logo">
+                <a href="index.html">Batik Nusantara</a>
+            </div>
+            <ul class="ul-navbar" id="menuLinks">
+                <li class="li-navbar">
+                    <a href="index.html" class="a-navbar active">Beranda</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="Product_page.html" class="a-navbar">Produk</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="about.html" class="a-navbar">Tentang Kami</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="contact.html" class="a-navbar">Kontak</a>
+                </li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Temukan Keindahan<br>Batik Indonesia</h1>
+                <p>Koleksi batik premium dengan motif tradisional yang dikerjakan oleh pengrajin terbaik Indonesia</p>
+                <a href="Product_page.html" class="cta-button">Lihat Koleksi</a>
+            </div>
+        </section>
+        <!-- Hero End -->
+
+        <!-- Featured Products -->
+        <section class="featured">
+            <h2 class="section-title">Koleksi Unggulan</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/batik-parang.jpg" alt="Batik Parang">
+                    </div>
+                    <div class="product-info">
+                        <h3>Batik Parang</h3>
+                        <p class="price">Rp 350.000</p>
+                        <a href="Product_detail_page.html?id=1" class="product-link">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/batik-megamendung.jpg" alt="Batik Mega Mendung">
+                    </div>
+                    <div class="product-info">
+                        <h3>Batik Mega Mendung</h3>
+                        <p class="price">Rp 425.000</p>
+                        <a href="Product_detail_page.html?id=2" class="product-link">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/batik-sidomukti.jpg" alt="Batik Sidomukti">
+                    </div>
+                    <div class="product-info">
+                        <h3>Batik Sidomukti</h3>
+                        <p class="price">Rp 475.000</p>
+                        <a href="Product_detail_page.html?id=3" class="product-link">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-center">
+                <a href="Product_page.html" class="secondary-button">Lihat Semua Produk</a>
+            </div>
+        </section>
+        <!-- Featured Products End -->
+
+        <!-- About Section -->
+        <section class="about-preview">
+            <div class="about-image">
+                <img src="assets/workshop.jpg" alt="Proses Pembuatan Batik">
+            </div>
+            <div class="about-text">
+                <h2>Tentang Batik Nusantara</h2>
+                <p>Batik Nusantara adalah UMKM yang berdedikasi melestarikan warisan budaya Indonesia melalui seni batik. Setiap produk kami dibuat dengan cinta dan ketelitian tinggi oleh pengrajin lokal berpengalaman.</p>
+                <p>Kami menawarkan berbagai motif batik tradisional dari seluruh Indonesia dengan kualitas premium dan harga yang terjangkau.</p>
+                <a href="about.html" class="text-link">Baca Selengkapnya</a>
+            </div>
+        </section>
+        <!-- About Section End -->
+
+        <!-- Testimonial Section -->
+        <section class="testimonials">
+            <h2 class="section-title">Testimoni Pelanggan</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Batik yang saya beli dari Batik Nusantara memiliki kualitas luar biasa. Motifnya indah dan warnanya tahan lama meski sudah dicuci berkali-kali."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p><strong>Ani Wijaya</strong><br>Jakarta</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Pelayanan yang ramah dan pengiriman cepat. Batik yang datang persis seperti di gambar, bahkan lebih indah saat dilihat langsung."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p><strong>Budi Santoso</strong><br>Surabaya</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial Section End -->
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Dapatkan Diskon 15% untuk Pembelian Pertama</h2>
+                <p>Gunakan kode <strong>BATIKBARU15</strong> saat checkout</p>
+                <a href="Product_page.html" class="cta-button">Belanja Sekarang</a>
+            </div>
+        </section>
+        <!-- CTA Section End -->
+
+        <!-- Footer -->
+        <footer class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Batik Nusantara</h3>
+                    <p>Melestarikan warisan budaya Indonesia melalui seni batik berkualitas.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Halaman</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="Product_page.html">Produk</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p>Jl. Batik Indah No. 45<br>Yogyakarta, Indonesia</p>
+                    <p>Telp: (0274) 123456<br>Email: info@batiknusantara.id</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Media Sosial</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">WA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Batik Nusantara. Hak Cipta Dilindungi.</p>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

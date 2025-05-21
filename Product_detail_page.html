@@ -1,0 +1,396 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batik Parang - Batik Nusantara</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar-container">
+            <div class="logo">
+                <a href="index.html">Batik Nusantara</a>
+            </div>
+            <ul class="ul-navbar" id="menuLinks">
+                <li class="li-navbar">
+                    <a href="index.html" class="a-navbar">Beranda</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="Product_page.html" class="a-navbar active">Produk</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="about.html" class="a-navbar">Tentang Kami</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="contact.html" class="a-navbar">Kontak</a>
+                </li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="index.html">Beranda</a> &gt;
+            <a href="Product_page.html">Produk</a> &gt;
+            <span>Batik Parang</span>
+        </div>
+        <!-- Breadcrumb End -->
+
+        <!-- Product Detail -->
+        <section class="product-detail">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="assets/M416.jpeg" alt="Assault Rifle" id="mainImage">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="assets/M416.jpeg" alt="M416 - Gambar 1" class="thumbnail active" onclick="changeImage('assets/M416.jpeg')">
+
+                </div>
+            </div>
+            
+            <div class="product-info-detail">
+                <h1>M416</h1>
+                <div class="product-meta">
+                    <p class="price">USD 35.000</p>
+                </div>
+                
+                <div class="product-description">
+                    <h3>Deskripsi</h3>
+                    <p>Sebagai salah satu senapan serbu terbaik, M416 menggunakan sistem gas yang memungkinkan tembakan yang lebih stabil dan dapat diandalkan dalam berbagai kondisi medan. Senjata ini juga menawarkan mode tembak yang fleksibel, memberikan pengguna kemampuan untuk menembak dalam mode semi-otomatis maupun otomatis, menyesuaikan dengan kebutuhan pertempuran.</p>
+                    <p>Dengan kualitas konstruksi yang sangat baik, M416 mampu bertahan dalam lingkungan yang ekstrem dan menawarkan daya tahan yang luar biasa. Selain itu, kemampuannya untuk dipersonalisasi dengan berbagai aksesoris, mulai dari optik, grip, hingga popor, menjadikan M416 pilihan utama bagi pasukan elit dan penggemar senjata di seluruh dunia.</p>
+                </div>
+                
+                <div class="product-specs">
+                    <h3>Spesifikasi</h3>
+                    <ul>
+                        <li><strong>Tipe Senjata:</strong> Senapan Serbu</li>
+                        <li><strong>Kaliber:</strong> 5.56×45mm NATO</li>
+                        <li><strong>Panjang Total:</strong> 840 mm (dengan popor dilipat)</li>
+                        <li><strong>Panjang Laras:</strong> 368 mm</li>
+                        <li><strong>Berat (tanpa amunisi):</strong> 3,29 kg</li>
+                        <li><strong>Magasin:</strong> 30 butir (bisa dipasang magasin berkapasitas lebih besar)</li>
+                        <li><strong>Sistem Operasi:</strong> Gas-operated, rotating bolt</li>
+                        <li><strong>Sistem Pengaman:</strong> Safety selector switch (untuk mengatur mode tembak)</li>
+                        <li><strong>Bahan:</strong> Konstruksi baja, aluminium, dan polimer tahan lama</li>
+                        <li><strong>Jangkauan Efektif:</strong> 600 meter</li>
+                        <li><strong>Aksesoris:</strong> Dapat dipasangi berbagai aksesoris seperti optik, grip depan, dan popor yang dapat disesuaikan</li>
+                    </ul>
+                </div>
+                
+                <div class="product-actions">
+                    <div class="quantity">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" id="quantity">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                    <button class="buy-now-btn">Beli Sekarang</button>
+                </div>
+                
+                <div class="shipping-info">
+                    <h3>Info Pengiriman</h3>
+                    <p>Pengiriman ke seluruh Indonesia melalui JNE, TIKI, dan Pos Indonesia. Estimasi waktu pengiriman 2-7 hari kerja tergantung lokasi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-detail">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="assets/Vector.jpeg" alt="Sub-machine Gun" id="mainImage">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="assets/Vector.jpeg" alt="Vector - Gambar 1" class="thumbnail active" onclick="changeImage('assets/Vector.jpeg')">
+                </div>
+            </div>
+            
+            <div class="product-info-detail">
+                <h1>KRISS Vector</h1>
+                <div class="product-meta">
+                    <p class="price">USD 28.500</p>
+                </div>
+                
+                <div class="product-description">
+                    <h3>Deskripsi</h3>
+                    <p>Vector adalah sub-machine gun dengan desain futuristik yang revolusioner. Menggunakan sistem Super V yang unik, senjata ini secara drastis mengurangi recoil dan muzzle climb, memungkinkan kontrol yang luar biasa saat menembak secara otomatis.</p>
+                    <p>Dengan rate of fire yang tinggi dan ukuran yang kompak, Vector menjadi pilihan ideal untuk operasi jarak dekat dan pertempuran di ruang terbatas. Desain ergonomisnya memungkinkan penggunaan yang nyaman dalam waktu lama, sementara rail mounting system yang terintegrasi memudahkan penambahan berbagai aksesori sesuai kebutuhan misi.</p>
+                </div>
+                
+                <div class="product-specs">
+                    <h3>Spesifikasi</h3>
+                    <ul>
+                        <li><strong>Tipe Senjata:</strong> Sub-machine Gun</li>
+                        <li><strong>Kaliber:</strong> .45 ACP</li>
+                        <li><strong>Panjang Total:</strong> 610 mm (dengan popor diperpanjang)</li>
+                        <li><strong>Panjang Laras:</strong> 140 mm</li>
+                        <li><strong>Berat (tanpa amunisi):</strong> 2,7 kg</li>
+                        <li><strong>Magasin:</strong> 25 butir (tersedia juga magasin 13, 30, atau 40 butir)</li>
+                        <li><strong>Sistem Operasi:</strong> Delayed blowback, KRISS Super V</li>
+                        <li><strong>Sistem Pengaman:</strong> Ambidextrous safety selector</li>
+                        <li><strong>Bahan:</strong> Polimer kekuatan tinggi dan komponen baja presisi</li>
+                        <li><strong>Jangkauan Efektif:</strong> 100 meter</li>
+                        <li><strong>Aksesoris:</strong> Rail Picatinny atas dan bawah, mount aksesori samping</li>
+                    </ul>
+                </div>
+                
+                <div class="product-actions">
+                    <div class="quantity">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" id="quantity">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                    <button class="buy-now-btn">Beli Sekarang</button>
+                </div>
+                
+                <div class="shipping-info">
+                    <h3>Info Pengiriman</h3>
+                    <p>Pengiriman ke seluruh Indonesia melalui JNE, TIKI, dan Pos Indonesia. Estimasi waktu pengiriman 2-7 hari kerja tergantung lokasi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-detail">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="assets/LMG.jpeg" alt="Light Machine Gun" id="mainImage">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="assets/LMG.jpeg" alt="LMG - Gambar 1" class="thumbnail active" onclick="changeImage('assets/LMG.jpeg')">
+                </div>
+            </div>
+            
+            <div class="product-info-detail">
+                <h1>M249 LMG</h1>
+                <div class="product-meta">
+                    <p class="price">USD 42.000</p>
+                </div>
+                
+                <div class="product-description">
+                    <h3>Deskripsi</h3>
+                    <p>M249 Light Machine Gun (LMG) adalah senjata penindas yang tangguh dengan kemampuan menembak berkelanjutan untuk memberikan daya api yang superior. Dirancang untuk memberikan dukungan api dalam skala squad, M249 memiliki sistem feeding yang fleksibel, dapat menggunakan baik belt amunisi maupun magazine standar.</p>
+                    <p>Dengan laras yang dapat diganti dengan cepat, M249 mampu mempertahankan fire rate yang tinggi tanpa overheating, menjadikannya pilihan utama untuk operasi yang membutuhkan volume tembakan yang besar. Bipod yang terpasang meningkatkan stabilitas saat menembak dari posisi stasioner, sementara desainnya masih memungkinkan mobilitas yang cukup untuk manuver taktis.</p>
+                </div>
+                
+                <div class="product-specs">
+                    <h3>Spesifikasi</h3>
+                    <ul>
+                        <li><strong>Tipe Senjata:</strong> Light Machine Gun</li>
+                        <li><strong>Kaliber:</strong> 5.56×45mm NATO</li>
+                        <li><strong>Panjang Total:</strong> 1040 mm</li>
+                        <li><strong>Panjang Laras:</strong> 465 mm</li>
+                        <li><strong>Berat (tanpa amunisi):</strong> 7,5 kg</li>
+                        <li><strong>Sistem Feeding:</strong> Disintegrating belt 200 rounds atau magazine STANAG 30 rounds</li>
+                        <li><strong>Sistem Operasi:</strong> Gas-operated, open bolt</li>
+                        <li><strong>Rate of Fire:</strong> 750-1000 rounds per minute</li>
+                        <li><strong>Bahan:</strong> Steel receiver, polimer grip, aluminum heat shield</li>
+                        <li><strong>Jangkauan Efektif:</strong> 800 meter pada titik target, 3600 meter jangkauan maksimum</li>
+                        <li><strong>Aksesoris:</strong> Integrated bipod, rail Picatinny untuk mounting optik dan aksesori</li>
+                    </ul>
+                </div>
+                
+                <div class="product-actions">
+                    <div class="quantity">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" id="quantity">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                    <button class="buy-now-btn">Beli Sekarang</button>
+                </div>
+                
+                <div class="shipping-info">
+                    <h3>Info Pengiriman</h3>
+                    <p>Pengiriman ke seluruh Indonesia melalui JNE, TIKI, dan Pos Indonesia. Estimasi waktu pengiriman 2-7 hari kerja tergantung lokasi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-detail">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="assets/DesertEagle.jpeg" alt="Pistol" id="mainImage">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="assets/DesertEagle.jpeg" alt="Desert Eagle - Gambar 1" class="thumbnail active" onclick="changeImage('assets/DesertEagle.jpeg')">
+                </div>
+            </div>
+            
+            <div class="product-info-detail">
+                <h1>Desert Eagle</h1>
+                <div class="product-meta">
+                    <p class="price">USD 22.500</p>
+                </div>
+                
+                <div class="product-description">
+                    <h3>Deskripsi</h3>
+                    <p>Desert Eagle adalah pistol semi-otomatis ikonik dengan daya hentikan yang luar biasa. Berbeda dengan kebanyakan pistol yang menggunakan sistem recoil atau blowback, Desert Eagle menggunakan sistem gas yang biasanya ditemukan pada rifle, memberikan kemampuan untuk menembakkan kaliber yang jauh lebih besar.</p>
+                    <p>Dengan frame dari stainless steel atau aluminum alloy dan slide dari baja solid, Desert Eagle memberikan kombinasi kekuatan luar biasa dan estetika yang mengesankan. Senjata ini bukan hanya alat taktis, tetapi juga simbol prestise di kalangan kolektor dan penembak jitu dengan presisi tinggi pada jarak yang lebih jauh dibandingkan pistol konvensional.</p>
+                </div>
+                
+                <div class="product-specs">
+                    <h3>Spesifikasi</h3>
+                    <ul>
+                        <li><strong>Tipe Senjata:</strong> Pistol Semi-Otomatis</li>
+                        <li><strong>Kaliber:</strong> .50 Action Express</li>
+                        <li><strong>Panjang Total:</strong> 270 mm</li>
+                        <li><strong>Panjang Laras:</strong> 152 mm</li>
+                        <li><strong>Berat (tanpa amunisi):</strong> 2,08 kg</li>
+                        <li><strong>Magasin:</strong> 7 butir</li>
+                        <li><strong>Sistem Operasi:</strong> Gas-operated, rotating bolt</li>
+                        <li><strong>Sistem Pengaman:</strong> Manual safety lever dan transfer bar</li>
+                        <li><strong>Bahan:</strong> Stainless steel frame, steel slide dengan berbagai opsi finishing</li>
+                        <li><strong>Jangkauan Efektif:</strong> 200 meter</li>
+                        <li><strong>Aksesoris:</strong> Picatinny rail untuk mounting aksesori, opsi custom grips</li>
+                    </ul>
+                </div>
+                
+                <div class="product-actions">
+                    <div class="quantity">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" id="quantity">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                    <button class="buy-now-btn">Beli Sekarang</button>
+                </div>
+                
+                <div class="shipping-info">
+                    <h3>Info Pengiriman</h3>
+                    <p>Pengiriman ke seluruh Indonesia melalui JNE, TIKI, dan Pos Indonesia. Estimasi waktu pengiriman 2-7 hari kerja tergantung lokasi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-detail">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="assets/M16A4.jpeg" alt="Assault Rifle" id="mainImage">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="assets/M16A4.jpeg" alt="M16A4 - Gambar 1" class="thumbnail active" onclick="changeImage('assets/M16A4.jpeg')">
+                </div>
+            </div>
+            
+            <div class="product-info-detail">
+                <h1>M16A4</h1>
+                <div class="product-meta">
+                    <p class="price">USD 32.000</p>
+                </div>
+                
+                <div class="product-description">
+                    <h3>Deskripsi</h3>
+                    <p>M16A4 adalah versi modern dari senapan serbu M16 legendaris yang telah melayani militer AS selama lebih dari lima dekade. Dengan laras panjang yang memberikan akurasi unggul, M16A4 memungkinkan pengguna untuk mengengam target dengan tepat pada jarak jauh.</p>
+                    <p>Fitur utama M16A4 adalah rail mounting system Picatinny yang terintegrasi, memungkinkan pemasangan berbagai aksesori taktis seperti optik, grip, dan penunjuk laser. Sistem gas direct impingement yang telah disempurnakan memberikan keandalan yang lebih baik dibandingkan versi sebelumnya, menjadikannya pilihan andal untuk berbagai situasi pertempuran.</p>
+                </div>
+                
+                <div class="product-specs">
+                    <h3>Spesifikasi</h3>
+                    <ul>
+                        <li><strong>Tipe Senjata:</strong> Senapan Serbu</li>
+                        <li><strong>Kaliber:</strong> 5.56×45mm NATO</li>
+                        <li><strong>Panjang Total:</strong> 1000 mm</li>
+                        <li><strong>Panjang Laras:</strong> 508 mm (20 inch)</li>
+                        <li><strong>Berat (tanpa amunisi):</strong> 3,4 kg</li>
+                        <li><strong>Magasin:</strong> 30 butir STANAG</li>
+                        <li><strong>Sistem Operasi:</strong> Direct impingement gas system</li>
+                        <li><strong>Mode Tembak:</strong> Semi-otomatis dan 3-round burst</li>
+                        <li><strong>Bahan:</strong> Receiver aluminium 7075-T6, laras baja krom-lined</li>
+                        <li><strong>Jangkauan Efektif:</strong> 800 meter</li>
+                        <li><strong>Aksesoris:</strong> Rail interface system (RIS) untuk mounting aksesori, carry handle yang dapat dilepas</li>
+                    </ul>
+                </div>
+                
+                <div class="product-actions">
+                    <div class="quantity">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" id="quantity">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                    <button class="buy-now-btn">Beli Sekarang</button>
+                </div>
+                
+                <div class="shipping-info">
+                    <h3>Info Pengiriman</h3>
+                    <p>Pengiriman ke seluruh Indonesia melalui JNE, TIKI, dan Pos Indonesia. Estimasi waktu pengiriman 2-7 hari kerja tergantung lokasi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-detail">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="assets/Uzi.jpeg" alt="Sub-machine Gun" id="mainImage">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="assets/Uzi.jpeg" alt="Uzi - Gambar 1" class="thumbnail active" onclick="changeImage('assets/Uzi.jpeg')">
+                </div>
+            </div>
+            
+            <div class="product-info-detail">
+                <h1>Uzi</h1>
+                <div class="product-meta">
+                    <p class="price">USD 18.500</p>
+                </div>
+                
+                <div class="product-description">
+                    <h3>Deskripsi</h3>
+                    <p>Uzi adalah sub-machine gun ikonik yang telah menjadi standar industri sejak diperkenalkan pada tahun 1950-an. Dengan desain kompak dan sederhana, Uzi menawarkan portabilitas maksimal tanpa mengorbankan daya api, membuatnya ideal untuk operasi di ruang sempit dan situasi yang membutuhkan kemampuan quick-draw.</p>
+                    <p>Fitur keselamatan Uzi termasuk grip safety yang memastikan senjata hanya dapat ditembakkan saat digenggam dengan benar, dan sistem bolt yang menembak dari posisi tertutup untuk akurasi yang lebih baik. Konstruksi terutama dari pressed steel membuat Uzi murah untuk diproduksi namun tetap sangat tahan lama dan andal di berbagai kondisi lingkungan.</p>
+                </div>
+                
+                <div class="product-specs">
+                    <h3>Spesifikasi</h3>
+                    <ul>
+                        <li><strong>Tipe Senjata:</strong> Sub-machine Gun</li>
+                        <li><strong>Kaliber:</strong> 9×19mm Parabellum</li>
+                        <li><strong>Panjang Total:</strong> 650 mm (dengan popor diperpanjang), 470 mm (dengan popor dilipat)</li>
+                        <li><strong>Panjang Laras:</strong> 260 mm</li>
+                        <li><strong>Berat (tanpa amunisi):</strong> 3,5 kg</li>
+                        <li><strong>Magasin:</strong> 32 butir (tersedia juga magasin 20, 25, dan 40 butir)</li>
+                        <li><strong>Sistem Operasi:</strong> Blowback, open bolt</li>
+                        <li><strong>Rate of Fire:</strong> 600 rounds per minute</li>
+                        <li><strong>Bahan:</strong> Pressed steel dan polimer</li>
+                        <li><strong>Jangkauan Efektif:</strong> 200 meter</li>
+                        <li><strong>Aksesoris:</strong> Popor yang dapat dilipat, bayonet lug (pada beberapa model)</li>
+                    </ul>
+                </div>
+                
+                <div class="product-actions">
+                    <div class="quantity">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" id="quantity">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                    <button class="buy-now-btn">Beli Sekarang</button>
+                </div>
+                
+                <div class="shipping-info">
+                    <h3>Info Pengiriman</h3>
+                    <p>Pengiriman ke seluruh Indonesia melalui JNE, TIKI, dan Pos Indonesia. Estimasi waktu pengiriman 2-7 hari kerja tergantung lokasi.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Product Detail End -->
+
+        <!-- Product Tabs -->
+        <div class="product-tabs">
+            <div class="tab-header">
+                <button class="tab-btn active" data-tab="description">Deskripsi Detail</button>
+            </div>
+            
+            <div class="tab-content active" id="description">
+                <h3>Sejarah</h3>
+                <p>M416 merupakan varian dari senapan M16, yang pertama kali dikembangkan pada tahun 1950-an oleh Eugene Stoner dan tim di Fairchild Armalite Corporation. M16 adalah senapan serbu yang menggunakan kaliber 5.56×45mm NATO dan menjadi senjata utama bagi militer Amerika Serikat sejak Perang Vietnam.</p>
+                <p>Namun, meskipun M16 sangat sukses, ada beberapa masalah dengan senjata ini yang menyebabkan kebutuhan untuk pengembangan lebih lanjut. Beberapa masalah yang muncul termasuk ketidakmampuan sistem gas dalam kondisi lingkungan yang ekstrem, serta masalah pada presisi dan daya tahan senapan.</p>
+                <p>Pada 1990-an, setelah diterimanya berbagai masukan dan pengalaman di lapangan, senapan M16 mengalami serangkaian perbaikan dan peningkatan desain. Salah satu hasil dari pengembangan ini adalah M4 Carbine, yang menjadi senapan utama bagi Angkatan Darat Amerika Serikat dan NATO. M4 adalah versi yang lebih kompak dan lebih mudah dikendalikan dari M16, dengan desain yang lebih fleksibel untuk digunakan dalam berbagai medan tempur.</p>
+            </div>

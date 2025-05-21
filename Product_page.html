@@ -1,0 +1,195 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - Mamat_Gunshop</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar-container">
+            <div class="logo">
+                <a href="index.html">Mamat GunShop</a>
+            </div>
+            <ul class="ul-navbar" id="menuLinks">
+                <li class="li-navbar">
+                    <a href="index.html" class="a-navbar">Beranda</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="Product_page.html" class="a-navbar active">Produk</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="about.html" class="a-navbar">Tentang Kami</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="contact.html" class="a-navbar">Kontak</a>
+                </li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Product Page Header -->
+        <header class="page-header">
+            <h1>Koleksi Senjata Kami</h1>
+            <p>Temukan berbagai tipe senjata dengan kualitas premium</p>
+        </header>
+        <!-- Product Page Header End -->
+
+        <!-- Product Filter -->
+        <div class="product-filter">
+            <div class="filter-group">
+                <label for="category">Kategori:</label>
+                <select id="category" name="category">
+                    <option value="all">Semua Kategori</option>
+                    <option value="Assault Rifle">Assault Rifle</option>
+                    <option value="Pistol">Pistol</option>
+                    <option value="Sub Machine Gun">Sub Machine Gun</option>
+                    <option value="Light Machine Gun">Light Machine Gun</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sort">Urutkan:</label>
+                <select id="sort" name="sort">
+                    <option value="newest">Terbaru</option>
+                    <option value="price-low">Harga: Rendah ke Tinggi</option>
+                    <option value="price-high">Harga: Tinggi ke Rendah</option>
+                    <option value="popular">Terpopuler</option>
+                </select>
+            </div>
+        </div>
+        <!-- Product Filter End -->
+
+        <!-- Products Grid -->
+        <section class="products-container">
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/M416.jpeg" alt="Assault Rifle">
+                    </div>
+                    <div class="product-info">
+                        <h3>Assault Rifle-M416"</h3>
+                        <p class="price">USD 35.000</p>
+                        <p class="product-description">M416 memiliki desain modern dengan presisi tinggi yang memungkinkan pengguna untuk mengendalikan tembakan dengan sangat akurat.</p>
+                        <a href="Product_detail_page.html?id=1" class="product-link">Lihat Detail</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/Vector.jpeg" alt="Sub Machine Gun">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sub Machine Gun-Vector</h3>
+                        <p class="price">USD 15.000</p>
+                        <p class="product-description">Vector adalah pilihan utama bagi mereka yang membutuhkan kecepatan dan responsivitas yang maksimal dalam pertempuran jarak dekat.</p>
+                        <a href="Product_detail_page.html?id=2" class="product-link">Lihat Detail</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/LMG.jpeg" alt="Light Machine Gun">
+                    </div>
+                    <div class="product-info">
+                        <h3>Light Machine Gun-LMG</h3>
+                        <p class="price">USD 75.000</p>
+                        <p class="product-description">Dirancang untuk memberikan dukungan tembakan jarak jauh, LMG memiliki kapasitas amunisi yang besar dan kemampuan untuk menahan tembakan dalam waktu lama tanpa mengurangi efektivitas.</p>
+                        <a href="Product_detail_page.html?id=3" class="product-link">Lihat Detail</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/DESERT_EAGLE.jpeg" alt="Pistol">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pistol-DESSERT EAGLE</h3>
+                        <p class="price">USD 8.000</p>
+                        <p class="product-description">Dikenal dengan kaliber besar dan kemampuan untuk menghasilkan tembakan dengan daya hancur tinggi, Desert Eagle sering kali dipilih oleh para pengguna yang mengutamakan kekuatan dan presisi dalam jarak dekat maupun menengah.</p>
+                        <a href="Product_detail_page.html?id=4" class="product-link">Lihat Detail</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/M16A4.jpeg" alt="Assault Rifle">
+                    </div>
+                    <div class="product-info">
+                        <h3>Assault Rifle-M16A4</h3>
+                        <p class="price">USD 32.500</p>
+                        <p class="product-description">M16A4 adalah salah satu senjata api otomatis yang digunakan oleh militer di berbagai negara, dikenal karena ketepatannya yang luar biasa dan kemampuannya untuk memberikan tembakan yang konsisten di medan pertempuran.</p>
+                        <a href="Product_detail_page.html?id=5" class="product-link">Lihat Detail</a>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/Uzi.jpeg" alt="Sub Machine Gun">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sub Machine Gun-Uzi</h3>
+                        <p class="price">USD 17.500</p>
+                        <p class="product-description">Uzi merupakan senapan mesin ringan yang menggunakan peluru kaliber 9mm, yang dirancang untuk kecepatan tembakan yang sangat tinggi dengan ukuran yang ringkas dan mudah dibawa.</p>
+                        <a href="Product_detail_page.html?id=6" class="product-link">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Products Grid End -->
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#" class="next">›</a>
+        </div>
+        <!-- Pagination End -->
+
+        <!-- Footer -->
+        <footer class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mamat GunShop</h3>
+                    <p>Menjual Senjata berkualitas.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Halaman</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="Product_page.html">Produk</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p>Jl. IM BORN IN THE HOOD No. 45<br>Surabaya, 55281, Indonesia</p>
+                    <p>Telp: (0274) 123456<br>Email: info@batiknusantara.id</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Media Sosial</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">WA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mamat GunShop. Hak Cipta Dilindungi.</p>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
